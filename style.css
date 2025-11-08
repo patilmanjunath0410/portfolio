@@ -1,0 +1,400 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f0f5fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  color: #04befe;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  color: #f0f5fa;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: #04befe;
+  font-weight: bold;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #f0f5fa;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 120px 60px 60px 60px;
+  background: linear-gradient(120deg, #04befe 0%, #3c8ce7 100%);
+  color: #fff;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+.home-content h1 span {
+  color: #222;
+  background: #fff;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+
+.home-content h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 12px;
+  color: #ff901e;
+}
+
+.home-content p {
+  margin-bottom: 24px;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: #ff901e;
+  color: #fff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 35px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #04befe;
+}
+
+.social {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.social a:hover {
+  color: #ff901e;
+}
+
+.home-img img {
+  width: 300px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  box-shadow: 0 8px 32px rgba(44,139,251,0.12);
+  background: #f0f5fa;
+}
+
+/* Section Headings */
+.heading {
+  font-size: 2.6rem;
+  color: #3c8ce7;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+
+/* Exams Section */
+.exams {
+  padding: 70px 60px;
+  background: #fff;
+}
+
+.exams-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 32px;
+}
+
+.exam-card {
+  background: #f0f5fa;
+  border: 2px solid #04befe;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 6px 18px rgba(44,139,251,0.09);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.exam-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 10px 32px rgba(44,139,251,0.12);
+}
+
+.exam-card h3 {
+  color: #3c8ce7;
+  margin-bottom: 8px;
+}
+
+.exam-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: #ff901e;
+  font-weight: 600;
+}
+
+.exam-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Projects Section */
+.projects {
+  padding: 70px 60px;
+  background: #f0f5fa;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border: 2px solid #3c8ce7;
+  border-radius: 18px;
+  padding: 24px;
+  min-width: 260px;
+  max-width: 340px;
+  box-shadow: 0 6px 18px rgba(44,139,251,0.09);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(44,139,251,0.15);
+}
+
+.project-card h3 {
+  color: #3c8ce7;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+.project-card span {
+  color: #ff901e;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+/* About Section */
+.about {
+  padding: 70px 60px;
+  background: #f0f5fa;
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.about-content ul {
+  list-style: none;
+  margin-top: 18px;
+  padding: 0;
+}
+
+.about-content li {
+  margin-bottom: 8px;
+  color: #3c8ce7;
+  font-weight: 500;
+}
+
+/* Certificates Section */
+.certificates {
+  padding: 70px 60px;
+  background: #fff;
+}
+
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.certificate-card {
+  background: #f0f5fa;
+  border: 2px solid #ff901e;
+  border-radius: 18px;
+  padding: 24px;
+  min-width: 260px;
+  max-width: 340px;
+  box-shadow: 0 6px 18px rgba(255,144,30,0.09);
+  transition: transform 0.2s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(44,139,251,0.15);
+}
+
+.certificate-card h3 {
+  color: #ff901e;
+  margin-bottom: 7px;
+}
+
+.certificate-card span {
+  color: #03b1fc;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.certificate-card p {
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  padding: 70px 60px;
+  background: #f0f5fa;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #3c8ce7;
+  font-size: 1rem;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #ff901e;
+}
+
+.contact .btn {
+  max-width: 180px;
+  align-self: center;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  header, .home, .exams, .about, .certificates, .contact, .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .home-img img {
+    width: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 15px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 0;
+  }
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .home-img img {
+    margin: 0 auto;
+  }
+  .certificates-container, .exams-container, .projects-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 410px) {
+  .home-content h1, .heading {
+    font-size: 1.7rem;
+  }
+}
